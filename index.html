@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>Solitario Sanino- JQuery</title> <!--Sanino Fabio-->
+    <meta charset="UTF-8">
+
+
+    <!-- Fogli Stile utilizzati -->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="JQuerry/JQuery-UI/CSS/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="JQuerry/JQuery-UI/CSS/jquery-ui.structure.css" />
+    <link rel="stylesheet" type="text/css" href="JQuerry/JQuery-UI/CSS/jquery-ui.theme.css" />
+
+
+    <!-- JavaScript Esterni alla Pagina -->
+    <script type="text/javascript" src="JQuerry/JQuery-3.6.0.js"></script>
+    <script type="text/javascript" src="JQuerry/JQuery-UI/JS/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="JS/script.js"></script>
+
+    <style>
+        body{
+        background-color:black;
+        }
+        #tavolo{
+            margin: auto;
+            border: 10px solid black;
+            width: 586px;
+            height:400px;
+            padding:6px;
+            background-image: url("img/background.jpg");
+
+        }
+        #mazzo{
+            padding:6px;
+            border: 1px solid white;
+            width: 200px;
+            height:100px;
+            float: left;
+        }
+        #dorso{
+            width: 67px;
+            height: 92px;
+            float: left;
+
+            background-image: url("img/dorso.JPG");
+        }
+        #poggia{
+            width: 296px;
+            height:100px;
+            border: 1px solid white;
+            float: right;
+            padding:6px;
+        }
+        .pogg{
+            margin-left: 5px;
+            width: 67px;
+            height: 92px;
+            border: 1px solid white;
+            float: right;
+        }
+        #banco{
+            margin-top: 125px;
+            border: 1px solid white;
+            height: 255px;
+            width: 578px;
+            padding:3px;
+        }
+        .con{
+            width: 69px;
+            height: 250px;
+            border: 1px solid white;
+            margin-left: 10px;
+            float: left;
+        }
+        .coll{
+            width: 69px;
+            height: 250px;
+        }
+        #generata{
+            width: 67px;
+            height: 92px;
+            border: 1px solid white;
+            float: right;
+        }
+    </style>
+    <!-- JavaScript Interni alla Pagina -->
+    <script type="text/javascript">
+
+    </script>
+
+</head>
+<body class="not">
+        <div id="tavolo" class="not">
+            <div id="mazzo">
+                    <div id="dorso"></div>
+                    <div id="generata" value="empty"></div>
+            </div>
+            <div id="poggia" class="not">
+                <div class="pogg" id="drop1"></div>
+                <div class="pogg"></div>
+                <div class="pogg"></div>
+                <div class="pogg"></div>
+            </div>
+            <div id="banco" class="not">
+                <div class="coll con" id="plan0" value="plan0"></div>
+                <div class="coll con" id="plan1" value="plan1"></div>
+                <div class="coll con" id="plan2" value="plan2"></div>
+                <div class="coll con" id="plan3" value="plan3"></div>
+                <div class="coll con" id="plan4" value="plan4"></div>
+                <div class="coll con" id="plan5" value="plan5"></div>
+                <div class="coll con" id="plan6" value="plan6"></div>
+            </div>
+        </div>
+</body>
+</html>
